@@ -55,13 +55,13 @@
         "nickname": "Hugo apenas."
     },
     "user7": {
-        "name" : "Reitora da FURDERJ",
-        "email": "reitora@fuderj.edu.br",
-        "password": "sexouiui",
-        "confirmPassword": "sexouiui",
+        "name" : "Agua",
+        "email": "agua@mail.com",
+        "password": "asdasdasdasd",
+        "confirmPassword": "asdasdasdasd",
         "walletAdress": "numero e letras aleatoriasblabla",
         "cell": "30962189574",
-        "nickname": "FUDERJ"
+        "nickname": "agua!"
     },
     "user8": {
         "name": "Cristiano Ganley",
