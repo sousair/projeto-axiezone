@@ -56,6 +56,7 @@ module.exports = app => {
 
     const getAllTeams = (req, res) => {
         app.db('teams')
+            .orderBy('id')
             .then(teams => res.json(teams))
             .catch(error => res.status(500).send(error))
     }
@@ -63,6 +64,7 @@ module.exports = app => {
     const getTeamsWithoutPlayer = (req, res) => {
         app.db('teams')
             .whereNull('playerId')
+            .orderBy('id')
             .then(teams => res.json(teams))
             .catch(error => res.status(500).send(error))
     }

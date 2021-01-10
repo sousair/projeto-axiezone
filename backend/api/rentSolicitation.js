@@ -126,7 +126,6 @@ module.exports = app => {
 
     const getAllSolicitations = (req, res) => {
         app.db('rent_solicitations')
-            .select('id', 'teamId', 'playerId', 'status')
             .then(solicitations => res.json(solicitations))
             .catch(error => res.status(500).send(error))
     }

@@ -66,6 +66,7 @@ module.exports = app => {
     const getAllUsers = (req, res) => {
         app.db('users')
             .select('id', 'name', 'nickname', 'email', 'cell', 'walletAdress', 'hasTeam')
+            .orderBy('id')
             .then(users => res.json(users))
             .catch(error => res.send(500).send(error))
     }
