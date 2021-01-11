@@ -16,13 +16,13 @@ module.exports = app => {
             console.log(error) 
         }
     
-        // Toda informação obtida dos axies é relevante, por isso o filter é importante
+        // Nem toda informação obtida dos axies é relevante, por isso o filter é importante
         const axiesArr = team.axies.map((axie) => {
             return {
                 id: axie.id,
                 name: axie.name,
                 class: axie.class,
-                // Mesma coisa se aplica as partes, a fim de indentificar a imagem de um canco de dados,
+                // Mesma coisa se aplica as partes, a fim de indentificar a imagem de um banco de dados,
                 // o necessário vai ser somente o tipo e o nome da parte
                 parts: axie.parts.map((part) => { 
                     return {
