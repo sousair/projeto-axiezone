@@ -1,5 +1,3 @@
-const { userParams } = require("../configs/db")
-
 module.exports = app => {
     const saveTeam = async (req, res) => {
         const { exists, notExists } = app.api.validation
@@ -17,9 +15,6 @@ module.exports = app => {
             exists(team.cashPolitic, 'Informe como será feita a cobrança e quando será o seu dia')
             exists(team.devolutionPolitic, 'Informe como será feita a devolução do time')
             exists(team.accountId, 'Infome a carteira da conta com os axies')
-            exists(team.axie1id, 'Informe o ID de todos os Axies')
-            exists(team.axie2id, 'Informe o ID de todos os Axies')
-            exists(team.axie3id, 'Informe o ID de todos os Axies')
 
             const teamFromDataBase = await app.db('teams')
                 .where({ accountId: team.accountId })
@@ -80,6 +75,15 @@ module.exports = app => {
             app.db('teams')
                 .where({ id: req.params.id })
                 .first()
+                .then(team => {
+                    team = {
+                        ...team,
+                        axies: []
+                    }
+                    return app.api.usingAxieInfinityAPI.getAxiesTeam(team, team.accountId)
+
+                    
+                })
                 .then(team => res.json(team))
         }
     }
