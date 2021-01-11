@@ -7,10 +7,7 @@
         "description": "Descrição de como funciona o deck blablabla",
         "cashPolitic": "Frequência dos saques, como é cobrado a primeira semana e adiante",
         "devolutionPolitic": "Como será debitado e enviado as SLP's que ja tinham na conta",
-        "accountId": "Carteira da conta 1",
-        "axie1id": 123,
-        "axie2id": 156,
-        "axie3id": 213
+        "accountId": "Carteira da conta 1"
     },
     "team2": {
         "name": "Time gorila",
@@ -20,10 +17,7 @@
         "description": "Descrição de como funciona o deck blablabla",
         "cashPolitic": "Frequência dos saques, como é cobrado a primeira semana e adiante",
         "devolutionPolitic": "Como será debitado e enviado as SLP's que ja tinham na conta",
-        "accountId": "Carteira da conta 2",
-        "axie1id": 1681,
-        "axie2id": 2981,
-        "axie3id": 618
+        "accountId": "Carteira da conta 2"
     },
     "team3": {
         "name": "Time macaco prego",
@@ -33,9 +27,6 @@
         "description": "Descrição de como funciona o deck blablabla",
         "cashPolitic": "Frequência dos saques, como é cobrado a primeira semana e adiante",
         "devolutionPolitic": "Como será debitado e enviado as SLP's que ja tinham na conta",
-        "accountId": "Carteira da conta 3",
-        "axie1id": 498,
-        "axie2id": 1654,
-        "axie3id": 28948
+        "accountId": "Carteira da conta 3"
     }
 }
