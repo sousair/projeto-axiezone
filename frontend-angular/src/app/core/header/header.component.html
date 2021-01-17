@@ -1,0 +1,23 @@
+<mat-toolbar class="mat-elevation-z3 container">
+    <span class="logo">
+        <a [routerLink]="['']" class="logo">
+            <img src="../../../assets/banner.png" alt="">
+        </a>
+    </span>
+    <span>
+        <a [routerLink]="['']">
+            <mat-icon class="icon">storefront</mat-icon>
+            Marketplace
+        </a>
+    </span>
+    <span>
+        <a [routerLink]="['/dashboard']">
+            <mat-icon class="icon">dashboard</mat-icon>
+            Dashboard
+        </a>
+    </span>
+    <span class="buttons">
+        <button mat-raised-button color="primary" class="signin">Login</button>
+        <button mat-raised-button color="primary" class="signup">Register</button>
+    </span>
+</mat-toolbar>
