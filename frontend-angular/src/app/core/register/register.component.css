@@ -1,0 +1,23 @@
+.container {
+    margin: 25px 500px 50px 500px;
+}
+
+.title {
+    margin-bottom: 25px;
+    color: #ccc;
+    margin-right: 25px;
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+
+.button {
+    width: 100%;
+}
+
+.button button {
+    width: 100%;
+}
+
+mat-form-field {
+    width: 100%;
+}

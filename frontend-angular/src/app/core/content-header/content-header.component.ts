@@ -16,11 +16,11 @@ export class ContentHeaderComponent implements OnInit {
   }
 
   get title(): string {
-    return this.headerService.headerDataTitle
+    return this.headerService.headerDataTitle;
   }
 
   get subtitle(): string {
-    return this.headerService.headerDataSubTitle
+    return this.headerService.headerDataSubTitle;
   }
 
 }

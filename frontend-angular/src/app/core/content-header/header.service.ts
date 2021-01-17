@@ -14,19 +14,19 @@ export class HeaderService {
   constructor() { }
 
   get headerDataTitle():string {
-    return this._headerData.title
+    return this._headerData.title;
   }
   
-  set HeaderDataTitle(title: string) {
-    this._headerData.title = title
+  set headerDataTitle(title: string) {
+    this._headerData.title = title;
   }
   
   get headerDataSubTitle(): string {
-    return this._headerData.subtitle
+    return this._headerData.subtitle;
   }
 
-  set HeaderDataSubTitle(subtitle: string) {
-    this._headerData.subtitle = subtitle
+  set headerDataSubTitle(subtitle: string) {
+    this._headerData.subtitle = subtitle;
   }
 
 }

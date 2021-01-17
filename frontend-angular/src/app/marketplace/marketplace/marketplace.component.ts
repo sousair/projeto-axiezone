@@ -13,19 +13,19 @@ export class MarketplaceComponent implements OnInit {
 
   headerData: HeaderData = {
     title: 'Marketplace',
-    subtitle: 'Água'
+    subtitle: 'Descrição do marketplace, etc.'
   }
 
   constructor(
     private teamsService: TeamsService,
     private headerService: HeaderService
   ) { 
-    this.headerService.HeaderDataTitle = this.headerData.title
-    this.headerService.HeaderDataSubTitle = this.headerData.subtitle
+    this.headerService.headerDataTitle = this.headerData.title;
+    this.headerService.headerDataSubTitle = this.headerData.subtitle;
   }
 
-  teams: Team[] = []
-  displayedColumns = ['id', 'name', 'type', 'description', 'accountId']
+  teams: Team[] = [];
+  displayedColumns = ['id', 'name', 'type', 'description', 'accountId'];
 
   ngOnInit(): void {
     this.getAllTeams()
@@ -33,10 +33,7 @@ export class MarketplaceComponent implements OnInit {
 
   getAllTeams(): void {
     this.teamsService.getAllTeamsWithoutPlayer().subscribe({
-      next: teams => {
-        console.log(teams)
-        this.teams = teams
-      },
+      next: teams => this.teams = teams,
       error: error => console.log('Erro', error)
     })
   }
