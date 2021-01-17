@@ -69,7 +69,7 @@ module.exports = app => {
         if(req.body.byOwnerId) {
             app.db('teams')
                 .where({ ownerId: req.params.id })
-                .first()
+                .orderBy('id')
                 .then(teams => res.json(teams))
         } else {
             app.db('teams')
@@ -81,8 +81,6 @@ module.exports = app => {
                         axies: []
                     }
                     return app.api.usingAxieInfinityAPI.getAxiesTeam(team, team.accountId)
-
-                    
                 })
                 .then(team => res.json(team))
         }

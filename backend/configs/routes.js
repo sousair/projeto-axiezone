@@ -22,14 +22,14 @@ module.exports = app => {
         .get(admin(app.api.teams.getAllTeams))
 
     app.route('/teams')
-        .all(app.configs.passport.authenticate())
         .get(app.api.teams.getTeamsWithoutPlayer)
+        .all(app.configs.passport.authenticate())
         .post(app.api.teams.saveTeam)
     
     app.route('/teams/:id')
+        .get(app.api.teams.getTeamById)
         .all(app.configs.passport.authenticate())
         .put(app.api.teams.saveTeam)
-        .get(app.api.teams.getTeamById)
 
     app.route('/solicitation')
         .all(app.configs.passport.authenticate())
