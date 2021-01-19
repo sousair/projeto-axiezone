@@ -32,7 +32,8 @@ export class LoginComponent implements OnInit {
       next: user => {
         localStorage.setItem('token',  user.token);
         this.router.navigate(['/marketplace'])
-      }
+      },
+      error: error => console.error(error)
     })
     
   }
