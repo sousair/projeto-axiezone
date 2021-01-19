@@ -8,15 +8,12 @@ module.exports = app => {
         
         try {
             // Requisitos para a solicitação ser feita.
-            exists(solicitation.playerId, 'Informe o ID do player.')
             exists(solicitation.teamId, 'Informe o ID do time desejado.')
+
+            solicitation.playerId = req.user.id
             
             // Verificar se o player já não possui time.
-            const playerFromDataBase = await app.db('users')
-                .where({ id: solicitation.playerId })
-                .first()
-            
-            if(playerFromDataBase.hasTeam === true) throw 'Player já possui time'
+            if(req.user.hasTeam === true) throw 'Player já possui time'
 
             // Date.now() nos dá o dia de hoje em milisegundos
             // e precisamos ter um cooldown de 15 dias para
@@ -68,7 +65,7 @@ module.exports = app => {
             .andWhere({ playerId: solicitationFromDataBase.playerId }).del()
             .catch(error => res.status(500).send(error))
 
-        // Setar o playerId de teams com o Id do player que fez a solicitação
+        // Setar o playerId do team com o Id do player que fez a solicitação
         await app.db('teams')
             .update({ playerId: solicitationFromDataBase.playerId})
             .where({ id: solicitationFromDataBase.teamId })

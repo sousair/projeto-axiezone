@@ -10,7 +10,7 @@ module.exports = app => {
             exists(team.name, 'Nome do time não informado.')
             exists(team.type, 'Tipo/Categoria não informado.')
             exists(team.rent, 'Cobrança semanal não informada.')
-            exists(team.ownerMail, 'Email do dono não informado.') // Implementar um melhor jeito de pegar o ID do dono atráves do login.
+            // exists(team.ownerMail, 'Email do dono não informado.') // método não necessáiro pois o id do dono é acessado pelo req.user
             exists(team.description, 'Adicione uma descrição para o seu time')
             exists(team.cashPolitic, 'Informe como será feita a cobrança e quando será o seu dia')
             exists(team.devolutionPolitic, 'Informe como será feita a devolução do time')
@@ -22,13 +22,7 @@ module.exports = app => {
             
             if(!team.id) notExists(teamFromDataBase, 'Essa carteira já cadastrada no sistema')
 
-            const ownerFromDataBase = await app.db('users')
-                .where({ email: team.ownerMail })
-                .first()
-            
-            delete team.ownerMail
-
-            team.ownerId = parseInt(ownerFromDataBase.id)
+            team.ownerId = req.user.id
 
         } catch (msg) {
             res.status(400).send(msg)
@@ -65,10 +59,14 @@ module.exports = app => {
     }
 
     const getTeamById = (req, res) => {
+        
+        // enviando o param byOwnerId setando por true
+        // será enviado um array de times com o ownderId
+        // igual ao da req.user.id
 
         if(req.body.byOwnerId) {
             app.db('teams')
-                .where({ ownerId: req.params.id })
+                .where({ ownerId: req.user.id })
                 .orderBy('id')
                 .then(teams => res.json(teams))
         } else {

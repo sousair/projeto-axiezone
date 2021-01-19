@@ -74,7 +74,7 @@ module.exports = app => {
     const getUserById = (req, res) => {
         app.db('users')
             .select('id', 'name', 'nickname', 'email', 'cell', 'walletAdress', 'hasTeam')
-            .where({ id: req.params.id })
+            .where({ id: req.user.id }) // Usando o payload do passport
             .first()
             .then(user => res.json(user))
             .catch(error => res.send(500).send(error))

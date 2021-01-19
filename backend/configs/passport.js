@@ -13,7 +13,16 @@ module.exports = app => {
         app.db('users')
             .where({ id: payload.id })
             .first()
-            .then(user => done(null, user ? { ...payload } : false))
+            .then(user => done(null, user ? user = {
+                id: user.id,
+                name: user.name,
+                email: user.email,
+                nickname: user.nickname,
+                cell: user.cell,
+                walletAdress: user.walletAdress,
+                hasTeam: user.hasTeam,
+                admin: user.admin
+            } : false)) // Mudando para retornar um usuário e ter acesso nas req.user
             .catch(error => done(error, false ))
     })
 
