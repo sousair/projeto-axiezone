@@ -5,34 +5,41 @@
     <form class="example-form">
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Nome</mat-label>
-            <input matInput placeholder="Pedro Miguel da Silva" type="text">
+            <input [(ngModel)]="user.name" matInput placeholder="Pedro Miguel da Silva" 
+                type="text" name="name" >
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="aaa@bbb.com" type="email">
+            <input [(ngModel)]="user.email" matInput placeholder="aaa@bbb.com" 
+                type="email" name="email" >
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Senha</mat-label>
-            <input matInput type="password">
+            <input [(ngModel)]="user.password" matInput 
+                type="password" name="password" >
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Confirme a senha</mat-label>
-            <input matInput type="password">
+            <input [(ngModel)]="user.confirmPassword" matInput 
+                type="password" name="confirmPassword" >
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Nickname</mat-label>
-            <input matInput placeholder="pedrinho123" type="text">
+            <input [(ngModel)]="user.nickname" matInput placeholder="pedrinho123" 
+                type="text" name="nickname" >
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Carteira</mat-label>
-            <input matInput type="text">
+            <input [(ngModel)]="user.walletAdress" matInput 
+                type="text" name="wallet" >
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Telefone</mat-label>
-            <input matInput placeholder="DDD9999-9999" type="tel">
+            <input [(ngModel)]="user.cell" matInput placeholder="DDD9999-9999" 
+                type="tel" name="cell" >
         </mat-form-field>
     </form>
     <span class="button">
-        <button mat-raised-button color="accent">Registrar</button>
+        <button (click)="register()" mat-raised-button color="accent">Registrar</button>
     </span>
 </mat-card>

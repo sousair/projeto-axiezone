@@ -16,7 +16,7 @@
 }
 
 .icon {
-    margin-right: 5px;
+    margin-right: 5%;
 }
 
 .logo {
@@ -31,7 +31,7 @@
 .buttons {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-left: auto; /* Faz os botões irem pro final */
 }
 
 .buttons button {

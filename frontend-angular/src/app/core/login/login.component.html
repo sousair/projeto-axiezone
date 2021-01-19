@@ -5,14 +5,16 @@
     <form class="example-form">
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Email</mat-label>
-            <input matInput type="email">
+            <input matInput [(ngModel)]="user.email"
+                type="email" name="email">
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Senha</mat-label>
-            <input matInput type="password">
+            <input matInput [(ngModel)]="user.password"
+                type="password" name="password">
         </mat-form-field>
     </form>
     <span class="button">
-        <button mat-raised-button color="accent">Entrar</button>
+        <button (click)="login()" mat-raised-button color="accent">Entrar</button>
     </span>
 </mat-card>
