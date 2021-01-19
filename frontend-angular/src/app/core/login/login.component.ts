@@ -28,8 +28,13 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-    this.userService.login(this.user);
-    this.router.navigate(['/marketplace'])
+    this.userService.login(this.user).subscribe({
+      next: user => {
+        localStorage.setItem('token',  user.token);
+        this.router.navigate(['/marketplace'])
+      }
+    })
+    
   }
 
 }

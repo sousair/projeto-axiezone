@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { UserService } from './../../user.service';
 import { HeaderService } from './../content-header/header.service';
 import { Component, OnInit } from '@angular/core';
@@ -11,7 +12,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private headerService: HeaderService,
-    private userService: UserService
+    private userService: UserService,
+    private router: Router
   ) { 
     this.headerService.headerDataTitle = '';
     this.headerService.headerDataSubTitle = '';
@@ -32,7 +34,15 @@ export class RegisterComponent implements OnInit {
 
   register(): void {
     this.userService.register(this.user).subscribe({
-      next: _ => this.userService.login(this.user), // Login depois do registro
+      next: _ => {
+        this.userService.login(this.user).subscribe({
+          next: user => {
+            localStorage.setItem('token', user.token)
+            this.router.navigate(['/marketplace'])
+          },
+          error: error => console.error(error)
+        })
+      },
       error: error => console.error(error)
     })
   }

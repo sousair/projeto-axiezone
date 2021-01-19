@@ -17,7 +17,11 @@
         </a>
     </span>
     <span class="buttons">
-        <button mat-raised-button color="primary" class="signin" [routerLink]="['/login']">Entrar</button>
-        <button mat-raised-button color="primary" class="signup" [routerLink]="['/register']">Registrar</button>
+        <button *ngIf="!alo.logged()" mat-raised-button color="primary" 
+            class="signin" [routerLink]="['/login']">Entrar</button>
+        <button *ngIf="!alo.logged()" mat-raised-button color="primary" 
+            class="signup" [routerLink]="['/register']">Registrar</button>
+        <button *ngIf="alo.logged()" mat-raised-button color="primary"
+            class="signout" [routerLink]="['/marketplace']" (click)="alo.logout()">Sair</button>
     </span>
 </mat-toolbar>
