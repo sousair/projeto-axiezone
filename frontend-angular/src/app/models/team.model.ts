@@ -1,3 +1,5 @@
+import { Axie } from './axie.model';
+
 export interface Team {
     id: number,
     name: string,
@@ -9,5 +11,6 @@ export interface Team {
     devolutionPolitic: string,
     addInfo?: string,
     accountId: string,
-    imgUrl?: string
+    imgUrl?: string,
+    axies?: Axie[]
 }

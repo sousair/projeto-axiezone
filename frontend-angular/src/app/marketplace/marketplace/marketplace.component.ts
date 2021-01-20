@@ -25,7 +25,7 @@ export class MarketplaceComponent implements OnInit {
   }
 
   teams: Team[] = [];
-  displayedColumns = ['id', 'name', 'type', 'description', 'accountId'];
+  displayedColumns = ['id', 'name', 'type', 'description', 'accountId', 'seeMore'];
 
   ngOnInit(): void {
     this.getAllTeams()

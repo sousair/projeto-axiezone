@@ -44,8 +44,7 @@ import { RegisterComponent } from './register/register.component';
   ],
   exports: [
     HeaderComponent,
-    ContentHeaderComponent,
-    LoginComponent
+    ContentHeaderComponent
   ]
 })
 export class CoreModule { }
