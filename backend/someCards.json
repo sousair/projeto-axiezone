@@ -1,0 +1,1324 @@
+{
+    "cards": [
+        {
+            "name": "Lam",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Angry Lam",
+            "damage": 110,
+            "shield": 40,
+            "description": "Deal 120% damage if this Axie's HP is below 50%.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-mouth-02.png"
+        },
+        {
+            "name": "Catfish",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Swallow",
+            "damage": 80,
+            "shield": 30,
+            "description": "Heal this Axie by the damage inflicted with this card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-mouth-04.png"
+        },
+        {
+            "name": "Risky Fish",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Fish Hook",
+            "damage": 110,
+            "shield": 30,
+            "description": "Apply Attack+ to this Axie when attacking Plant, Reptile, or Dusk targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-mouth-08.png"
+        },
+        {
+            "name": "Piraha",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Crimson Water",
+            "damage": 130,
+            "shield": 20,
+            "description": "Target injured enemy if this Axie's HP is below 50%.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-mouth-10.png"
+        },
+        {
+            "name": "Nut Cracker",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Nut Crack",
+            "damage": 105,
+            "shield": 30,
+            "description": "Deal 120% damage when comboed with another 'Nut Cracker' card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-mouth-02.png"
+        },
+        {
+            "name": "Goda",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Piercing Sound",
+            "damage": 80,
+            "shield": 40,
+            "description": "Destoy 1 of your opponent's energy.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-mouth-04.png"
+        },
+        {
+            "name": "Axie Kiss",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Death Mark",
+            "damage": 90,
+            "shield": 30,
+            "description": "Apply Lethal to target if this Axie's HP is below 30%.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-mouth-08.png"
+        },
+        {
+            "name": "Confident",
+            "type": "mouth",
+            "cost": 0,
+            "cardName": "Self Rally",
+            "damage": 0,
+            "shield": 30,
+            "description": "Apply 2 Morale+ to this Axie for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-mouth-10.png"
+        },
+        {
+            "name": "Serious",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Vegetal Bite",
+            "damage": 30,
+            "shield": 30,
+            "description": "Steal 1 energy from your opponent when comboed with another card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-02.png"
+        },
+        {
+            "name": "Zigzag",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Drain Bite",
+            "damage": 55,
+            "shield": 55,
+            "description": "Heal this Axie by the damage this card inflicts.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-04.png"
+        },
+        {
+            "name": "Herbivore",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Vegan Diet",
+            "damage": 65,
+            "shield": 65,
+            "description": "Heal this Axie by the damage this card inflicts on a Plant target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-08.png"
+        },
+        {
+            "name": "Silence Whisper",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Forest Spirit",
+            "damage": 0,
+            "shield": 40,
+            "description": "Heal front teammate for 190 HP.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-10.png"
+        },
+        {
+            "name": "Doubletalk",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Soothing Song",
+            "damage": 50,
+            "shield": 0,
+            "description": "Apply Sleep to target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-02.png"
+        },
+        {
+            "name": "Peace Maker",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Peace Treaty",
+            "damage": 120,
+            "shield": 30,
+            "description": "Apply Attack- on target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-04.png"
+        },
+        {
+            "name": "Hungry Bird",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Insectivore",
+            "damage": 110,
+            "shield": 40,
+            "description": "Target Bug class enemy if this Axie's HP is below 50%.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-08.png"
+        },
+        {
+            "name": "Little Owl",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Dark Swoop",
+            "damage": 25,
+            "shield": 0,
+            "description": "Target fastest enemy.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-10.png"
+        },
+        {
+            "name": "Mosquito",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Blood Taste",
+            "damage": 70,
+            "shield": 40,
+            "description": "Heal this Axie by the damage inflicted with this card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-02.png"
+        },
+        {
+            "name": "Pincer",
+            "type": "mouth",
+            "cost": 0,
+            "cardName": "Sunder Claw",
+            "damage": 30,
+            "shield": 10,
+            "description": "Randomly discard 1 card from your enemy's hand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-04.png"
+        },
+        {
+            "name": "Cute Bunny",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Terror Chomp",
+            "damage": 120,
+            "shield": 30,
+            "description": "Apply Fear to target for 2 turns when played in a Chain.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-08.png"
+        },
+        {
+            "name": "Square Teeth",
+            "type": "mouth",
+            "cost": 0,
+            "cardName": "Mite Bite",
+            "damage": 30,
+            "shield": 0,
+            "description": "Add 100% more damage when comboed with another card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-10.png"
+        },
+        {
+            "name": "Toothless Bite",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Sneaky Raid",
+            "damage": 20,
+            "shield": 40,
+            "description": "Target the furthest enemy.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-02.png"
+        },
+        {
+            "name": "Kotaro",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Kotaro bite",
+            "damage": 80,
+            "shield": 20,
+            "description": "Gain 1 energy if target is faster than this Axie.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-04.png"
+        },
+        {
+            "name": "Razor Bite",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Why So Serious",
+            "damage": 90,
+            "shield": 50,
+            "description": "Heal this Axie by damage inflicted with this card to Aquatic targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-08.png"
+        },
+        {
+            "name": "Tiny Turtle",
+            "type": "mouth",
+            "cost": 1,
+            "cardName": "Chomp",
+            "damage": 80,
+            "shield": 50,
+            "description": "Apply Stun to enemy when comboed with at least 2 additional cards.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-10.png"
+        },
+        {
+            "name": "Babylonia",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Shell Jab",
+            "damage": 100,
+            "shield": 50,
+            "description": "Deal 130% damage when attacking an idle target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-horn-02.png"
+        },
+        {
+            "name": "Teal Shell",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Deep Sea Gore",
+            "damage": 50,
+            "shield": 80,
+            "description": "Add 30% to this Axie's shield when attacking.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-horn-04.png"
+        },
+        {
+            "name": "Clamshell",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Clam Slash",
+            "damage": 110,
+            "shield": 40,
+            "description": "Apply Attack+ to this Axie when attacking Beast, Bug, or Mech targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-horn-06.png"
+        },
+        {
+            "name": "Anemone",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Aquaponics",
+            "damage": 80,
+            "shield": 40,
+            "description": "Successful attacks restore 50 HP for each Anemone part this Axie posseses.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-horn-08.png"
+        },
+        {
+            "name": "Oranda",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Hero's Bane",
+            "damage": 120,
+            "shield": 30,
+            "description": "End target's Last Stand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-horn-10.png"
+        },
+        {
+            "name": "Shoal Star",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Star Shuriken",
+            "damage": 115,
+            "shield": 10,
+            "description": "Target cannot enter Last Stand if this card brings its HP to zero.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-horn-12.png"
+        },
+        {
+            "name": "Little Branch",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Branch Charge",
+            "damage": 125,
+            "shield": 25,
+            "description": "Increase crit chance by 20% if chained or comboed with a plant card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-horn-02.png"
+        },
+        {
+            "name": "Imp",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Ivory Stab",
+            "damage": 70,
+            "shield": 20,
+            "description": "Gain 1 energy per critical strike dealt by your team this round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-horn-04.png"
+        },
+        {
+            "name": "Merry",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Merry Legion",
+            "damage": 65,
+            "shield": 85,
+            "description": "Add 20% shield to this Axie when played in a chain.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-horn-06.png"
+        },
+        {
+            "name": "Pocky",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Sugar Rush",
+            "damage": 120,
+            "shield": 20,
+            "description": "Deal 10% additional damage for each allied Bug Axie.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-horn-08.png"
+        },
+        {
+            "name": "Dual Blade",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Sinister Strike",
+            "damage": 130,
+            "shield": 20,
+            "description": "Deal 250% damage on critical strikes.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-horn-10.png"
+        },
+        {
+            "name": "Arco",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Acrobatic",
+            "damage": 100,
+            "shield": 50,
+            "description": "Apply Speed + to this Axie for 2 rounds when attacked.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-horn-12.png"
+        },
+        {
+            "name": "Bamboo Shoot",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Bamboo Clan",
+            "damage": 80,
+            "shield": 70,
+            "description": "Increased 20% damage when chained with another plant card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-02.png"
+        },
+        {
+            "name": "Beech",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Wooden Stab",
+            "damage": 105,
+            "shield": 40,
+            "description": "Deal 120% damage if this Axie's shield breaks.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-04.png"
+        },
+        {
+            "name": "Rose Bud",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Healing Aroma",
+            "damage": 0,
+            "shield": 40,
+            "description": "Heal this Axie for 120 HP.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-06.png"
+        },
+        {
+            "name": "Strawberry Shortcake",
+            "type": "horn",
+            "cost": 2,
+            "cardName": "Sweet Party",
+            "damage": 0,
+            "shield": 0,
+            "description": "Heal front teammate for 270 HP. If there are no front teammates, heal this Axie instead.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-08.png"
+        },
+        {
+            "name": "Cactus",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Prickly Trap",
+            "damage": 110,
+            "shield": 20,
+            "description": "Deal 120% damage if this Axie attacks last.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-10.png"
+        },
+        {
+            "name": "Watermelon",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Seed Bullet",
+            "damage": 30,
+            "shield": 30,
+            "description": "Target the fastest enemy.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-12.png"
+        },
+        {
+            "name": "Eggshell",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Eggbomb",
+            "damage": 120,
+            "shield": 0,
+            "description": "Apply Aroma on this Axie until next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-02.png"
+        },
+        {
+            "name": "Cuckoo",
+            "type": "horn",
+            "cost": 0,
+            "cardName": "Cockadoodledoo",
+            "damage": 0,
+            "shield": 40,
+            "description": "Apply Attack+ to this Axie.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-04.png"
+        },
+        {
+            "name": "Trump",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Air Force One",
+            "damage": 120,
+            "shield": 30,
+            "description": "Deal 120% damage when chained with another 'Trump' card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-06.png"
+        },
+        {
+            "name": "Kestrel",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Headshot",
+            "damage": 130,
+            "shield": 0,
+            "description": "Disable target's horn cards next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-08.png"
+        },
+        {
+            "name": "Wing Horn",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Smart Shot",
+            "damage": 50,
+            "shield": 10,
+            "description": "Skip the closest target if there are 2 or more enemies remaining.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-10.png"
+        },
+        {
+            "name": "Feather Spear",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Feather Lunge",
+            "damage": 100,
+            "shield": 50,
+            "description": "Deal 120% damage when chained with another 'Lunge' card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-12.png"
+        },
+        {
+            "name": "Laggin",
+            "type": "horn",
+            "cost": 0,
+            "cardName": "Mystic Rush",
+            "damage": 40,
+            "shield": 0,
+            "description": "Apply Speed- to target for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-02.png"
+        },
+        {
+            "name": "Antenna",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Bug Signal",
+            "damage": 80,
+            "shield": 60,
+            "description": "Steal energy from your opponent when chained with another 'Bug Signal' card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-04.png"
+        },
+        {
+            "name": "Caterpillars",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Grub Surprise",
+            "damage": 80,
+            "shield": 50,
+            "description": "Apply Fear to shielded targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-06.png"
+        },
+        {
+            "name": "Pliers",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Dull Grip",
+            "damage": 120,
+            "shield": 0,
+            "description": "Deal 30% more damage to shielded targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-08.png"
+        },
+        {
+            "name": "Parasite",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Third Glance",
+            "damage": 90,
+            "shield": 50,
+            "description": "Randomly discard 1 card from your enemy's hand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-10.png"
+        },
+        {
+            "name": "Leaf Bug",
+            "type": "horn",
+            "cost": 0,
+            "cardName": "Disguise",
+            "damage": 20,
+            "shield": 20,
+            "description": "Gain 1 energy when comboed with a plant card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-12.png"
+        },
+        {
+            "name": "Unko",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Poo Fling",
+            "damage": 30,
+            "shield": 40,
+            "description": "Apply Stench to target until end of round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-02.png"
+        },
+        {
+            "name": "Scaly Spear",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Scaly Lunge",
+            "damage": 100,
+            "shield": 50,
+            "description": "Deal 120% damage when chained with another 'lunge' card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-04.png"
+        },
+        {
+            "name": "Cerastes",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Surprise Invasion",
+            "damage": 80,
+            "shield": 60,
+            "description": "Deal 130% damage if target is faster than this Axie.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-06.png"
+        },
+        {
+            "name": "Scaly Spoon",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Tiny Catapult",
+            "damage": 40,
+            "shield": 60,
+            "description": "Reflect 50% of ranged damage back at attacker.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-08.png"
+        },
+        {
+            "name": "Incisor",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Disarm",
+            "damage": 100,
+            "shield": 40,
+            "description": "Apply Speed- to attacker for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-10.png"
+        },
+        {
+            "name": "Bumpy",
+            "type": "horn",
+            "cost": 1,
+            "cardName": "Overgrow Keratin",
+            "damage": 80,
+            "shield": 20,
+            "description": "Recover 20 shield per turn.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-12.png"
+        },
+        {
+            "name": "Hermit",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Shelter",
+            "damage": 0,
+            "shield": 115,
+            "description": "Disable critical strikes on this Axie during this round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-back-02.png"
+        },
+        {
+            "name": "Blue Moon",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Scale Dart",
+            "damage": 120,
+            "shield": 30,
+            "description": "Draw a card if target is in Last Stand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-back-04.png"
+        },
+        {
+            "name": "Goldfish",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Swift Escape",
+            "damage": 110,
+            "shield": 20,
+            "description": "Apply Speed+ to this Axie for 2 rounds when attacked.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-back-06.png"
+        },
+        {
+            "name": "Sponge",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Shipwreck",
+            "damage": 60,
+            "shield": 90,
+            "description": "Apply Attack+ to this Axie if its shield breaks.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-back-08.png"
+        },
+        {
+            "name": "Anemone",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Aqua Vitality",
+            "damage": 80,
+            "shield": 40,
+            "description": "Successful attacks restore 50 HP for each Anemone part this Axie posseses.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-back-10.png"
+        },
+        {
+            "name": "Perch",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Spinal Tap",
+            "damage": 100,
+            "shield": 20,
+            "description": "Prioritize idle target when comboed with at least 2 additional cards.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-back-12.png"
+        },
+        {
+            "name": "Ronin",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Single Combat",
+            "damage": 75,
+            "shield": 0,
+            "description": "Guaranteed critical strike when comboed with at least 2 other cards.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-back-02.png"
+        },
+        {
+            "name": "Hero",
+            "type": "back",
+            "cost": 0,
+            "cardName": "Heroic Reward",
+            "damage": 50,
+            "shield": 0,
+            "description": "Draw a card when attacking an Aquatic, Bird, or Dawn target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-back-04.png"
+        },
+        {
+            "name": "Jaguar",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Nitro Leap",
+            "damage": 115,
+            "shield": 35,
+            "description": "Always strike first if this Axie is in Last Stand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-back-06.png"
+        },
+        {
+            "name": "Risky Beast",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Revenge Arrow",
+            "damage": 125,
+            "shield": 25,
+            "description": "Deal 150% damage if this Axie is in Last Stand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-back-08.png"
+        },
+        {
+            "name": "Timber",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Woodman Power",
+            "damage": 50,
+            "shield": 100,
+            "description": "Add Shield equal to the damage this cards deals to Plant targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-back-10.png"
+        },
+        {
+            "name": "Furball",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Juggling Balls",
+            "damage": 40,
+            "shield": 30,
+            "description": "Strike 3 times.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-back-12.png"
+        },
+        {
+            "name": "Turnip",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Turnip Rocket",
+            "damage": 60,
+            "shield": 80,
+            "description": "Target a bird if comboed with 2 or more cards.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-02.png"
+        },
+        {
+            "name": "Shiitake",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Shroom's Grace",
+            "damage": 0,
+            "shield": 40,
+            "description": "Heal this Axie for 120 HP.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-04.png"
+        },
+        {
+            "name": "Bidens",
+            "type": "back",
+            "cost": 0,
+            "cardName": "Cleanse Scent",
+            "damage": 0,
+            "shield": 50,
+            "description": "Remove all debuffs from this Axie.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-06.png"
+        },
+        {
+            "name": "Watering Can",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Aqua Stock",
+            "damage": 45,
+            "shield": 80,
+            "description": "Gain 1 energy if this Axie is struck by an Aquatic card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-08.png"
+        },
+        {
+            "name": "Mint",
+            "type": "back",
+            "cost": 0,
+            "cardName": "Refresh",
+            "damage": 0,
+            "shield": 50,
+            "description": "Remove all debuffs from a teammate if its directly in front (same row) of this Axie.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-10.png"
+        },
+        {
+            "name": "Pumpkin",
+            "type": "back",
+            "cost": 1,
+            "cardName": "October Treat",
+            "damage": 0,
+            "shield": 115,
+            "description": "Draw a card if this Axie's shield doesn't break this round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-12.png"
+        },
+        {
+            "name": "Balloon",
+            "type": "back",
+            "cost": 0,
+            "cardName": "Balloon Pop",
+            "damage": 40,
+            "shield": 0,
+            "description": "Apply Fear to target for 1 turn. If defending, apply Fear to self until next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-02.png"
+        },
+        {
+            "name": "Cupid",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Heart Break",
+            "damage": 120,
+            "shield": 20,
+            "description": "Apply Morale- to enemy for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-04.png"
+        },
+        {
+            "name": "Raven",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Ill-omened",
+            "damage": 110,
+            "shield": 30,
+            "description": "Apply Jinx to target for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-06.png"
+        },
+        {
+            "name": "Pigeon Post",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Blackmail",
+            "damage": 120,
+            "shield": 10,
+            "description": "Transfer all debuffs on this Axie to target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-08.png"
+        },
+        {
+            "name": "Kingfisher",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Patient Hunter",
+            "damage": 130,
+            "shield": 0,
+            "description": "Target an Aquatic class enemy if this Axie's HP is below 50%",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-10.png"
+        },
+        {
+            "name": "Tri Feather",
+            "type": "back",
+            "cost": 0,
+            "cardName": "Triple Threat",
+            "damage": 30,
+            "shield": 10,
+            "description": "Attack twice if this Axie has any debuffs.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-12.png"
+        },
+        {
+            "name": "Snail Shell",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Sticky Goo",
+            "damage": 40,
+            "shield": 60,
+            "description": "Stun attacker if this Axie’s shield breaks. Can only trigger once per round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-02.png"
+        },
+        {
+            "name": "Garish Worm",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Barb Strike",
+            "damage": 100,
+            "shield": 50,
+            "description": "Apply poison to target when played in a chain.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-04.png"
+        },
+        {
+            "name": "Buzz Buzz",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Bug Noise",
+            "damage": 100,
+            "shield": 40,
+            "description": "Apply Attack- to target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-06.png"
+        },
+        {
+            "name": "Sandal",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Bug Splat",
+            "damage": 110,
+            "shield": 50,
+            "description": "Deal 50% more damage when attacking Bug targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-08.png"
+        },
+        {
+            "name": "Scarab",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Scarab Curse",
+            "damage": 100,
+            "shield": 40,
+            "description": "Target cannot be healed until next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-10.png"
+        },
+        {
+            "name": "Spiky Wing",
+            "type": "back",
+            "cost": 0,
+            "cardName": "Buzzing Wind",
+            "damage": 10,
+            "shield": 30,
+            "description": "Apply Fragile to target until next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-12.png"
+        },
+        {
+            "name": "Bone Sail",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Ivory Chop",
+            "damage": 80,
+            "shield": 70,
+            "description": "Draw a card if this Axie's shield breaks.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-02.png"
+        },
+        {
+            "name": "Tri Spikes",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Spike Throw",
+            "damage": 80,
+            "shield": 50,
+            "description": "Target enemy with lowest shield when comboed with 2 or more cards.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-04.png"
+        },
+        {
+            "name": "Green Thorns",
+            "type": "back",
+            "cost": 0,
+            "cardName": "Vine Dagger",
+            "damage": 20,
+            "shield": 30,
+            "description": "Double shield from this card when comboed with a plant card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-06.png"
+        },
+        {
+            "name": "Indian Star",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Bulkwark",
+            "damage": 20,
+            "shield": 70,
+            "description": "Reflect 40% of melee damage back at attacker.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-08.png"
+        },
+        {
+            "name": "Red Ear",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Slippery Shield",
+            "damage": 10,
+            "shield": 135,
+            "description": "Add 15% of this Axie's shield to adjacent teammates.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-10.png"
+        },
+        {
+            "name": "Croc",
+            "type": "back",
+            "cost": 1,
+            "cardName": "Nile Strike",
+            "damage": 80,
+            "shield": 60,
+            "description": "Appy Speed- to target for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-12.png"
+        },
+        {
+            "name": "Koi",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Upstream Swim",
+            "damage": 110,
+            "shield": 30,
+            "description": "Apply Speed+ to this Axie for 2 rounds when comboed with another Aquatic class card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-tail-02.png"
+        },
+        {
+            "name": "Nimo",
+            "type": "tail",
+            "cost": 0,
+            "cardName": "Tail Slap",
+            "damage": 30,
+            "shield": 0,
+            "description": "Gain 1 energy when comboed with another card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-tail-04.png"
+        },
+        {
+            "name": "Tadpole",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Black Bubble",
+            "damage": 100,
+            "shield": 40,
+            "description": "Apply Jinx to target for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-tail-06.png"
+        },
+        {
+            "name": "Ranchu",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Water Sphere",
+            "damage": 110,
+            "shield": 30,
+            "description": "Apply Chill to target for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-tail-08.png"
+        },
+        {
+            "name": "Navaga",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Flanking Smack",
+            "damage": 100,
+            "shield": 40,
+            "description": "Deal 120% damage if this Axie attacks first.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-tail-10.png"
+        },
+        {
+            "name": "Shrimp",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Chitin Jump",
+            "damage": 30,
+            "shield": 30,
+            "description": "Prioritizes furthest target",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/aquatic-tail-12.png"
+        },
+        {
+            "name": "Cottontail",
+            "type": "tail",
+            "cost": 0,
+            "cardName": "Luna Absorb",
+            "damage": 0,
+            "shield": 0,
+            "description": "Gain 1 energy.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-tail-02.png"
+        },
+        {
+            "name": "Rice",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Night Steal",
+            "damage": 80,
+            "shield": 10,
+            "description": "Steal 1 energy from your opponent when comboed with another card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-tail-04.png"
+        },
+        {
+            "name": "Shiba",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Rampant Howl",
+            "damage": 110,
+            "shield": 40,
+            "description": "Apply Morale+ to your team for 2 rounds if this Axie attacks while in Last Stand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-tail-06.png"
+        },
+        {
+            "name": "Hare",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Hare Dagger",
+            "damage": 120,
+            "shield": 30,
+            "description": "Draw a card if this Axie attacks at the beginning of the round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-tail-08.png"
+        },
+        {
+            "name": "Nut Cracker",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Nut Throw",
+            "damage": 105,
+            "shield": 30,
+            "description": "Deal 120% damage when comboed with another 'Nut Cracker' card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-tail-10.png"
+        },
+        {
+            "name": "Gerbil",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Gerbil Jump",
+            "damage": 40,
+            "shield": 20,
+            "description": "Skip the closest target if there are 2 or more enemies remaining.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/beast-tail-12.png"
+        },
+        {
+            "name": "Carrot",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Carrot Hammer",
+            "damage": 70,
+            "shield": 40,
+            "description": "Gain 1 energy if this Axie's shield breaks. Can only trigger once per round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-02.png"
+        },
+        {
+            "name": "Cattail",
+            "type": "tail",
+            "cost": 0,
+            "cardName": "Cattail Slap",
+            "damage": 20,
+            "shield": 30,
+            "description": "Draw a card if struck by a Beast, Bug, or Mech card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-04.png"
+        },
+        {
+            "name": "Hatsune",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Leek Leak",
+            "damage": 60,
+            "shield": 80,
+            "description": "When hit, disable the attacker's ranged cards next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-06.png"
+        },
+        {
+            "name": "Yam",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Gas Unleash",
+            "damage": 30,
+            "shield": 20,
+            "description": "Apply poison each time this card is used to attack or defend.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-08.png"
+        },
+        {
+            "name": "Potato Leaf",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Aqua Deflect",
+            "damage": 70,
+            "shield": 80,
+            "description": "Cannot be targeted by Aquatic cards if this Axie has teammates remaining.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-10.png"
+        },
+        {
+            "name": "Hot Butt",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Spicy Surprise",
+            "damage": 90,
+            "shield": 50,
+            "description": "Disable target's mouth cards next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-12.png"
+        },
+        {
+            "name": "Swallow",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Early Bird",
+            "damage": 110,
+            "shield": 20,
+            "description": "Deal 120% damage if this Axie attacks first.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-02.png"
+        },
+        {
+            "name": "Feather Fan",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Sunder Armor",
+            "damage": 40,
+            "shield": 90,
+            "description": "Add 20% shield to this Axie for each debuff it possesses.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-04.png"
+        },
+        {
+            "name": "The Last One",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Risky Feather",
+            "damage": 140,
+            "shield": 10,
+            "description": "Apply 2 Attack- to this Axie.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-06.png"
+        },
+        {
+            "name": "Cloud",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Puffy Smack",
+            "damage": 100,
+            "shield": 50,
+            "description": "Skip targets that are in Last Stand.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-08.png"
+        },
+        {
+            "name": "Granma's Fan",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Cool Breeze",
+            "damage": 110,
+            "shield": 30,
+            "description": "Apply Chill to target for 2 rounds.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-10.png"
+        },
+        {
+            "name": "Post Fight",
+            "type": "tail",
+            "cost": 0,
+            "cardName": "All-out Shot",
+            "damage": 140,
+            "shield": 0,
+            "description": "Inflict 30% of this Axie's max HP to itself.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-12.png"
+        },
+        {
+            "name": "Ant",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Chemical Warfare",
+            "damage": 30,
+            "shield": 40,
+            "description": "Apply Stench to enemy for 1 round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-02.png"
+        },
+        {
+            "name": "Twin Tail",
+            "type": "tail",
+            "cost": 0,
+            "cardName": "Twin Needle",
+            "damage": 30,
+            "shield": 0,
+            "description": "Attack twice when comboed with another card.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-04.png"
+        },
+        {
+            "name": "Fish Snack",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Anesthetic Bait",
+            "damage": 60,
+            "shield": 90,
+            "description": "Apply stun when struck by Aquatic or Bird class cards. Can only trigger once per round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-06.png"
+        },
+        {
+            "name": "Gravel Ant",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Numbing Lecretion",
+            "damage": 30,
+            "shield": 40,
+            "description": "Disable target's melee cards next round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-08.png"
+        },
+        {
+            "name": "Pupae",
+            "type": "tail",
+            "cost": 0,
+            "cardName": "Grub Explode",
+            "damage": 60,
+            "shield": 0,
+            "description": "Deal 200% damage when attacking in Last stand. Axie's Last Stand ends after it attacks.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-10.png"
+        },
+        {
+            "name": "Thorny Cattepilar",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Allergic Reaction",
+            "damage": 110,
+            "shield": 30,
+            "description": "Deal 130% damage to debuffed targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-12.png"
+        },
+        {
+            "name": "Wall Gecko",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Critical Escape",
+            "damage": 90,
+            "shield": 30,
+            "description": "Reduce damage taken by 15% this round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-02.png"
+        },
+        {
+            "name": "Iguana",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Scale Dart",
+            "damage": 90,
+            "shield": 60,
+            "description": "Generate 1 energy when attacking a buffed target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-04.png"
+        },
+        {
+            "name": "Tiny Dino",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Tiny Swing",
+            "damage": 80,
+            "shield": 40,
+            "description": "Deal 150% damage after round 4.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-06.png"
+        },
+        {
+            "name": "Snake Jar",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Jar Barrage",
+            "damage": 70,
+            "shield": 10,
+            "description": "Attacks that break this Axie’s shield cannot do additional damage. Can only trigger once per round.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-08.png"
+        },
+        {
+            "name": "Gila",
+            "type": "tail",
+            "cost": 1,
+            "cardName": "Neuro Toxin",
+            "damage": 100,
+            "shield": 50,
+            "description": "Apply Attack- to poisoned targets.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-10.png"
+        },
+        {
+            "name": "Grass Snake",
+            "type": "tail",
+            "cost": 0,
+            "cardName": "Venom Spray",
+            "damage": 10,
+            "shield": 20,
+            "description": "Apply Poison to target.",
+            "imgUrl": "https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-12.png"
+        }
+    ]
+}

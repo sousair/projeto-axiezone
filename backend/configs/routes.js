@@ -40,5 +40,11 @@ module.exports = app => {
         .all(app.configs.passport.authenticate())
         .put(app.api.rentSolicitation.aproveSolicitation)
         .delete(app.api.rentSolicitation.cancelSolicitation)
+
+    app.route('/cards')
+        .post(app.api.cards.saveCards)
+    
+    app.route('/cards/:name/:type')
+        .get(app.api.cards.getCard)
         
 }
