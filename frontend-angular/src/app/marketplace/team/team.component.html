@@ -1,4 +1,4 @@
-<mat-card class="firstCard" >
+<mat-card class="firstCard">
     <mat-card-title class="title">
         Descrição
     </mat-card-title>
@@ -7,7 +7,7 @@
     </mat-card-subtitle>
 </mat-card>
 
-<mat-card class="teamCard" >
+<mat-card class="teamCard">
     <mat-card-title class="title">
         Politica de pagamento
     </mat-card-title>
@@ -16,7 +16,7 @@
     </mat-card-subtitle>
 </mat-card>
 
-<mat-card class="teamCard" >
+<mat-card class="teamCard">
     <mat-card-title class="title">
         Política de Devolução
     </mat-card-title>
@@ -25,7 +25,7 @@
     </mat-card-subtitle>
 </mat-card>
 
-<mat-card class="teamCard" >
+<mat-card class="teamCard">
     <mat-card-title class="title">
         Informação Adicional
     </mat-card-title>
@@ -39,14 +39,14 @@
         <mat-card-title>
             {{ axie.name }}
         </mat-card-title>
-        <a href="https://marketplace.axieinfinity.com/axie/{{ axie.id }}" target="_blank">
-            <img mat-card-image src="{{ axie.image }}" alt="AxieImage" class="axieImg" >
+        <a href="https://marketplace.axieinfinity.com/axie/{{ axie.id }}" target="_blank" class="axieImg">
+            <img mat-card-image src="{{ axie.image }}" alt="AxieImage">
         </a>
     </div>
     <div class="content">
-        <mat-card-content>
-            asiudhaoisfhasoiduhsai            asiudhaoisfhasoiduhsai            asiudhaoisfhasoiduhsai            asiudhaoisfhasoiduhsai            asiudhaoisfhasoiduhsai
-        </mat-card-content>
+        <div class="cards">
+            <img src="{{ card.imgUrl }}" alt="" *ngFor="let card of axie.parts" class="cardImg">
+        </div>
     </div>
-    
+
 </mat-card>

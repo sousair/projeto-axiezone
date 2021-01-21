@@ -12,5 +12,5 @@ export interface Team {
     addInfo?: string,
     accountId: string,
     imgUrl?: string,
-    axies?: Axie[]
+    axies: Axie[]
 }
