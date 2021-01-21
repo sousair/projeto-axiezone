@@ -46,5 +46,7 @@ module.exports = app => {
     
     app.route('/cards/:name/:type')
         .get(app.api.cards.getCard)
+        .all(app.configs.passport.authenticate())
+        .post(app.api.cards.saveCard)
         
 }
