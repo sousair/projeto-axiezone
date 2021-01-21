@@ -2,19 +2,17 @@
     <mat-card-title class="title">
         Entrar
     </mat-card-title>
-    <form class="example-form">
+    <form [formGroup]="user" (ngSubmit)="login()" class="example-form">
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Email</mat-label>
-            <input matInput [(ngModel)]="user.email"
+            <input matInput formControlName="email"
                 type="email" name="email">
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Senha</mat-label>
-            <input matInput [(ngModel)]="user.password"
+            <input matInput formControlName="password"
                 type="password" name="password">
         </mat-form-field>
+        <button type="submit" [disabled]="user.invalid" mat-raised-button color="accent" class="button">Entrar</button>
     </form>
-    <span class="button">
-        <button (click)="login()" mat-raised-button color="accent">Entrar</button>
-    </span>
 </mat-card>

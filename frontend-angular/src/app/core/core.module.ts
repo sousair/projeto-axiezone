@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -28,7 +28,7 @@ import { RegisterComponent } from './register/register.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     RouterModule.forChild([
