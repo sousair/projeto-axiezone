@@ -23,6 +23,10 @@ export class LoginComponent implements OnInit {
 
   user !: FormGroup
 
+  get control() {
+    return this.user.controls;
+  }
+
   ngOnInit(): void {
     this.user = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],

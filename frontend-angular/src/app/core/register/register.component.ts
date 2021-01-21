@@ -21,11 +21,15 @@ export class RegisterComponent implements OnInit {
     this.headerService.headerDataSubTitle = '';
   }
 
+  get control() {
+    return this.user.controls;
+  }
+
   user!: FormGroup; 
 
   ngOnInit(): void {
     this.user = this.formBuilder.group({
-      name: ['', [Validators.minLength(5), Validators.required]],
+      name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
       confirmPassword: ['', [Validators.required, Validators.minLength(8)]],

@@ -7,11 +7,15 @@
             <mat-label>Email</mat-label>
             <input matInput formControlName="email"
                 type="email" name="email">
+                <mat-error *ngIf="(user.touched || user.dirty) && control.email.errors && control.email.errors.required" >Campo requerido</mat-error>
+                <mat-error *ngIf="(user.touched || user.dirty) && control.email.errors && control.email.errors.email" >Digite um email valido</mat-error>
         </mat-form-field>
         <mat-form-field appearance="fill" color="accent">
             <mat-label>Senha</mat-label>
             <input matInput formControlName="password"
                 type="password" name="password">
+            <mat-error *ngIf="(user.touched || user.dirty) && control.password.errors && control.password.errors.required">Campo requerido</mat-error>
+            <mat-error *ngIf="(user.touched || user.dirty) && control.password.errors && control.password.errors.minLength">Senha muito curta</mat-error>
         </mat-form-field>
         <button type="submit" [disabled]="user.invalid" mat-raised-button color="accent" class="button">Entrar</button>
     </form>
