@@ -2,50 +2,25 @@
     <mat-card-title class="title">
         Registrar
     </mat-card-title>
+
     <form [formGroup]="user" (ngSubmit)="register()" class="example-form">
-        <mat-form-field appearance="fill" color="accent">
-            <mat-label>Nome</mat-label>
-            <input formControlName="name" matInput placeholder="Pedro Miguel da Silva" 
-                type="text" name="name" >
-            <mat-error *ngIf="(user.touched || user.dirty) && control.name.errors && control.name.errors.required">Campo obrigatório</mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill" color="accent">
-            <mat-label>Email</mat-label>
-            <input formControlName="email" matInput placeholder="aaa@bbb.com" 
-                type="email" name="email" >
-            <mat-error *ngIf="(user.touched || user.dirty) && control.email.errors && control.email.errors.required">Campo obrigatório</mat-error>
-            <mat-error *ngIf="(user.touched || user.dirty) && control.email.errors && control.email.errors.email">Email inválido</mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill" color="accent">
-            <mat-label>Senha</mat-label>
-            <input formControlName="password" matInput 
-                type="password" name="password" >
-            <mat-error *ngIf="(user.touched || user.dirty) && control.password.errors && control.password.errors.required">Campo obrigatório</mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill" color="accent">
-            <mat-label>Confirme a senha</mat-label>
-            <input formControlName="confirmPassword" matInput 
-                type="password" name="confirmPassword" >
-            <mat-error *ngIf="(user.touched || user.dirty) && control.confirmPassword.errors && control.confirmPassword.errors.required">Campo obrigatório</mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill" color="accent">
-            <mat-label>Nickname</mat-label>
-            <input formControlName="nickname" matInput placeholder="pedrinho123" 
-                type="text" name="nickname" >
-            <mat-error *ngIf="(user.touched || user.dirty) && control.nickname.errors && control.nickname.errors.required">Campo obrigatório</mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill" color="accent">
+        
+        <app-input-text [formGroup]="user" controlName="name" placeholder="Pedro Miguel da Silva" inputName="name" label="Nome *" class="full-width" ></app-input-text>
+        <app-input-email [formGroup]="user" controlName="email" placeholder="a@b.com" inputName="email" label="Email *"></app-input-email>
+        <app-input-password [formGroup]="user" controlName="password" inputName="password" label="Senha *"></app-input-password>
+        <app-input-password [formGroup]="user" controlName="confirmPassword" inputName="confirmPassword" label="Confirme a senha *"></app-input-password>
+        <app-input-text [formGroup]="user" controlName="nickname" placeholder="pedrinho123" inputName="nickname" label="Nickname *"></app-input-text>
+        <app-input-text [formGroup]="user" controlName="walletAdress" inputName="walletAdress" label="Carteira ETH *"></app-input-text>
+        <!-- <mat-form-field appearance="fill" color="accent">
             <mat-label>Carteira ETH</mat-label>
-            <input formControlName="walletAdress" matInput 
+            <input formControlName="walletAdress" required matInput 
                 type="text" name="walletAdress">
-            <mat-error *ngIf="(user.touched || user.dirty) && control.walletAdress.errors && control.walletAdress.errors.required">Campo obrigatório</mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill" color="accent">
-            <mat-label>Telefone</mat-label>
-            <input formControlName="cell" matInput placeholder="DD98888-8888" 
-                type="tel" name="cell" >
-            <mat-error *ngIf="(user.touched || user.dirty) && control.cell.errors && control.cell.errors.required">Campo obrigatório</mat-error>
-        </mat-form-field>
-        <button type="submit" [disabled]="user.invalid" mat-raised-button color="accent" class="button">Registrar</button>
+            <mat-error *ngIf="validateInputs.hasErrorValidate(control.walletAdress, 'required')">Campo obrigatório</mat-error>
+            <mat-error *ngIf="validateInputs.hasErrorValidate(control.walletAdress, 'minlength')">Precisa ter exatamente 42 caracteres</mat-error>
+            <mat-error *ngIf="validateInputs.hasErrorValidate(control.walletAdress, 'maxlength')">Precisa ter exatamente 42 caracteres</mat-error>
+        </mat-form-field> -->
+        <app-input-tel [formGroup]="user" controlName="cell" placeholder="DD98888-8888" inputName="cell" label="Telefone *"></app-input-tel>
+
+        <button type="submit" [disabled]="user.invalid" mat-raised-button color="accent" class="button">Registrar</button>  
     </form>
 </mat-card>

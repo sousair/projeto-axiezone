@@ -14,11 +14,11 @@ export class UserService {
   private serverUrl: string = 'http://localhost:3000';
 
   logged(): boolean {
-    return !!localStorage.getItem('token')
+    return !!localStorage.getItem('token');
   }
 
   login(user: object): Observable<any> {
-    return this.httpClient.post<any>(`${this.serverUrl}/signin`, user)
+    return this.httpClient.post<any>(`${this.serverUrl}/signin`, user);
   }
 
   register(user: object): Observable<any> {
@@ -26,7 +26,7 @@ export class UserService {
   }
 
   logout(): void {
-    localStorage.removeItem('token')
+    localStorage.removeItem('token');
   }
 
 }

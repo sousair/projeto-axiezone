@@ -1,4 +1,4 @@
-import { Card } from './models/card.model';
+import { Card } from '../../models/card.model';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -12,10 +12,10 @@ export class CardService {
     private httpClient: HttpClient,
   ) { }
 
-  private cardsUrl = 'http://localhost:3000/cards'
+  private cardsUrl = 'http://localhost:3000/cards';
 
   getCard(part: any): Observable<Card> {
-    return this.httpClient.get<Card>(`${this.cardsUrl}/${part.name}/${part.type}`)
+    return this.httpClient.get<Card>(`${this.cardsUrl}/${part.name}/${part.type}`);
   } 
 
 }

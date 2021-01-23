@@ -1,7 +1,7 @@
 <mat-toolbar class="mat-elevation-z3 container">
     <span class="logo">
         <a routerLink="" class="logo">
-            <img src="../../../assets/banner.png" alt="">
+            <img src="../../../assets/images/banner.png" alt="">
         </a>
     </span>
     <span>
@@ -17,11 +17,11 @@
         </a>
     </span>
     <span class="buttons">
-        <button *ngIf="!alo.logged()" mat-raised-button color="primary" 
+        <button *ngIf="!userService.logged()" mat-raised-button color="primary" 
             class="signin" routerLink="/login">Entrar</button>
-        <button *ngIf="!alo.logged()" mat-raised-button color="primary" 
+        <button *ngIf="!userService.logged()" mat-raised-button color="primary" 
             class="signup" routerLink="/register">Registrar</button>
-        <button *ngIf="alo.logged()" mat-raised-button color="primary"
-            class="signout" routerLink="/marketplace" (click)="alo.logout()">Sair</button>
+        <button *ngIf="userService.logged()" mat-raised-button color="primary"
+            class="signout" routerLink="/marketplace" (click)="userService.logout()">Sair</button>
     </span>
 </mat-toolbar>

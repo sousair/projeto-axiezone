@@ -1,8 +1,8 @@
-import { Router } from '@angular/router';
-import { UserService } from './../../user.service';
-import { HeaderService } from './../content-header/header.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HeaderService } from './../content-header/header.service';
+import { UserService } from '../../shared/services/user.service';
 
 @Component({
   selector: 'app-register',
@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
     return this.user.controls;
   }
 
-  user!: FormGroup; 
+  user!: FormGroup;
 
   ngOnInit(): void {
     this.user = this.formBuilder.group({
@@ -44,8 +44,8 @@ export class RegisterComponent implements OnInit {
       next: _ => {
         this.userService.login(this.user.value).subscribe({
           next: user => {
-            localStorage.setItem('token', user.token)
-            this.router.navigate(['/marketplace'])
+            localStorage.setItem('token', user.token);
+            this.router.navigate(['/marketplace']);
           },
           error: error => console.error(error)
         })

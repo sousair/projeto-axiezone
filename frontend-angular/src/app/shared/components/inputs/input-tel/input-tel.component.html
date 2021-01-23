@@ -1,0 +1,15 @@
+<div [formGroup]="formGroup">
+    <mat-form-field appearance="fill" color="accent" class="full-width" >
+        <mat-label>{{ label }}</mat-label>
+        <input
+            matInput
+            type="tel"
+            pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}"
+            [formControlName]="controlName"
+            [placeholder]="placeholder" 
+            [name]="inputName">
+        <mat-error *ngIf="validateInputs.hasErrorValidate(formControl, 'required')">Campo obrigatório</mat-error>
+        <mat-error *ngIf="validateInputs.hasErrorValidate(formControl, 'minlength')">Número inválido</mat-error>
+        <mat-error *ngIf="validateInputs.hasErrorValidate(formControl, 'maxlength')">Número inválido</mat-error>
+    </mat-form-field>
+</div>

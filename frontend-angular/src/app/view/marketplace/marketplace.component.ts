@@ -1,7 +1,7 @@
 import { HeaderData } from './../../core/content-header/header-data.model';
 import { HeaderService } from './../../core/content-header/header.service';
 import { Team } from './../../models/team.model';
-import { TeamsService } from './../../teams.service';
+import { TeamsService } from '../../shared/services/teams.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -28,7 +28,7 @@ export class MarketplaceComponent implements OnInit {
   displayedColumns = ['id', 'name', 'type', 'description', 'accountId', 'seeMore'];
 
   ngOnInit(): void {
-    this.getAllTeams()
+    this.getAllTeams();
   }
 
   getAllTeams(): void {
