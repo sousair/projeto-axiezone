@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HeaderService } from './../../core/content-header/header.service';
-import { TeamsService } from '../../shared/services/teams.service';
-import { CardService } from '../../shared/services/card.service';
-import { Card } from './../../models/card.model';
-import { Axie } from './../../models/axie.model';
-import { Team } from './../../models/team.model';
+import { HeaderService } from 'src/app/core/content-header/header.service';
+import { TeamsService } from 'src/app/core/services/teams.service';
+import { CardService } from 'src/app/core/services/card.service';
+import { Card } from 'src/app/models/card.model';
+import { Axie } from 'src/app/models/axie.model';
+import { Team } from 'src/app/models/team.model';
 
 @Component({
   selector: 'app-team',

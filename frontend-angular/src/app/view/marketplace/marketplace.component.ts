@@ -1,8 +1,9 @@
-import { HeaderData } from './../../core/content-header/header-data.model';
-import { HeaderService } from './../../core/content-header/header.service';
-import { Team } from './../../models/team.model';
-import { TeamsService } from '../../shared/services/teams.service';
 import { Component, OnInit } from '@angular/core';
+
+import { HeaderData } from 'src/app/core/content-header/header-data.model';
+import { HeaderService } from 'src/app/core/content-header/header.service';
+import { Team } from 'src/app/models/team.model';
+import { TeamsService } from 'src/app/core/services/teams.service';
 
 @Component({
   selector: 'app-marketplace',

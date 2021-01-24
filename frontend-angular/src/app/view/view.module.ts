@@ -8,8 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list'
 
-import { TeamComponent } from './team/team.component';
-import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { TeamComponent } from 'src/app/view/team/team.component';
+import { MarketplaceComponent } from 'src/app/view/marketplace/marketplace.component';
 
 
 @NgModule({

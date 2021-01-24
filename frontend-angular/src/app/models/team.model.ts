@@ -1,4 +1,4 @@
-import { Axie } from './axie.model';
+import { Axie } from 'src/app/models/axie.model';
 
 export interface Team {
     id: number,

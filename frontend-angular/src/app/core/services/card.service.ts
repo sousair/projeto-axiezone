@@ -1,4 +1,4 @@
-import { Card } from '../../models/card.model';
+import { Card } from 'src/app/models/card.model';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';

@@ -1,4 +1,4 @@
-import { ValidateInputsService } from './../../../services/validate-inputs.service';
+import { ValidateInputsService } from 'src/app/core/services/validate-inputs.service';
 import { FormGroup, AbstractControl } from '@angular/forms';
 import { Component, Input } from '@angular/core';
 

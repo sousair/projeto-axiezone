@@ -1,4 +1,3 @@
-import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -11,10 +10,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-import { ContentHeaderComponent } from './content-header/content-header.component';
-import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { ContentHeaderComponent } from 'src/app/core/content-header/content-header.component';
+import { HeaderComponent } from 'src/app/core/header/header.component';
+import { LoginComponent } from 'src/app/core/login/login.component';
+import { RegisterComponent } from 'src/app/core/register/register.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
