@@ -20,7 +20,7 @@ module.exports = app => {
             // o player assumir outro time.
             const twoWeeksInMiliSeconds = 1296000000
 
-            if(Date.now() < (parseInt(playerFromDataBase.cooldown) + twoWeeksInMiliSeconds)) throw 'Player foi distituido de um time recentemente'
+            if(Date.now() < (parseInt(req.user.cooldown) + twoWeeksInMiliSeconds)) throw 'Player foi distituido de um time recentemente'
             
             // Verificar se a solicitação não está sendo feita pelo próprio dono do time.
             const teamFromDataBase = await app.db('teams')
@@ -43,7 +43,7 @@ module.exports = app => {
         // Inserir a Solicitação no banco de dados.
         app.db('rent_solicitations')
             .insert(solicitation)
-            .then(_ => res.status(204).send('Solicitação realizada com sucesso'))
+            .then(_ => res.status(204).send('Solicitação realizada com sucesso.'))
             .catch(error => res.status(500).send(error))
     }
 
@@ -77,55 +77,64 @@ module.exports = app => {
             .where({ id: solicitationFromDataBase.playerId })
             .catch(error => res.status(500).send(error))
 
-        // Atualizar a solicitação para aprovada
-        solicitationFromDataBase.status = 'Aprovada!'
-
-        app.db('rent_solicitations')
-            .update(solicitationFromDataBase)
-            .where({ id: req.params.id })
-            .then(_ => res.status(204).send('Solicitação aprovada'))
+        await app.db('rent_solicitations')
+            .where({ id: solicitationFromDataBase.id }).del()
             .catch(error => res.status(500).send(error))
+
+        app.db('approved_rent')
+            .insert(solicitationFromDataBase)
+            .then(_ => res.status(204).send('Solicitação aprovada.'))
+            .catch(error => res.status(500).send(error))
+
     }
 
-    const cancelSolicitation = async (req, res) => {
+    const cancelSolicitation = (req, res) => {
 
-        const solicitationFromDataBase = await app.db('rent_solicitations')
+        app.db('rent_solicitations')
+            .where({ id: req.params.id }).del()
+            .then(_ => res.status(204).send())
+            .catch(error => res.status(500).send(error))
+
+    }
+
+    const cancelRent = async (req, res) => {
+        
+        const approvedRentFromDataBase = await app.db('approved_rent')
             .where({ id: req.params.id })
             .first()
 
-        // Caso a solicitação já tenha sido aprovada, e o player já está em posse do time,
-        // temos que destitiur o player, adicionar o cooldown de 15 dias para outra soliciatação
-        // e deixar o time sem playerId
-        if(solicitationFromDataBase.status == 'Aprovada!') {
-            await app.db('users')
-                .update({ hasTeam: false, cooldown: Date.now()})
-                .where({ id: solicitationFromDataBase.playerId })
-                .catch(error => res.status(500).send(error))
+        await app.db('teams')
+            .update({ playerId: null})
+            .where({ id: approvedRentFromDataBase.teamId })
+            .catch(error => res.status(500).send(error))
+        
+        await app.db('users')
+            .update({ hasTeam: false })
+            .where({ id: approvedRentFromDataBase.playerId })
+            .catch(error => res.status(500).send(error))
 
-            await app.db('teams')
-                .update({ playerId: null })
-                .where({ id: solicitationFromDataBase.teamId })
-                .catch(error => res.status(500).send(error))
-
-            await app.db('rent_solicitations')
-                .where({ id: req.params.id }).del()
-                .then(_ => res.status(204).send('Solicitação cancelada'))
-                .catch(error => res.status(500).send(error))
-            
-        } else {
-            await app.db('rent_solicitations')
-                .where({ id: req.params.id }).del()
-                .then(_ => res.status(204).send('Solicitação cancelada'))
-                .catch(error => res.status(500).send(error))
-        }
+        app.db('approved_rent')
+            .where({ id: approvedRentFromDataBase.id }).del()
+            .then(_ => res.status(204).send('Aluguel cancelado com sucesso.'))
+            .catch(error => res.status(500).send(error))
 
     }
 
     const getAllSolicitations = (req, res) => {
+
         app.db('rent_solicitations')
             .then(solicitations => res.json(solicitations))
             .catch(error => res.status(500).send(error))
+
     }
 
-    return { makeSolicitation, aproveSolicitation, cancelSolicitation, getAllSolicitations }
+    const getAllApprovedRents = (req, res) => {
+        
+        app.db('approved_rent')
+            .then(rents => res.json(rents))
+            .catch(error => res.status(500).send(error))
+
+    }
+
+    return { makeSolicitation, aproveSolicitation, cancelSolicitation, cancelRent, getAllSolicitations, getAllApprovedRents }
 }
