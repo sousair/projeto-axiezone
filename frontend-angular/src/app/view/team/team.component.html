@@ -36,17 +36,41 @@
 
 <mat-card class="axieCard" *ngFor="let axie of team.axies">
     <div class="nameAndImg">
-        <mat-card-title>
-            {{ axie.name }}
+        <mat-card-title class="nameAndClass">
+            <div class="name">
+                {{ axie.name }}
+            </div>
+            <div [class]="axie.class">
+                {{ axie.class | uppercase }}
+            </div>
         </mat-card-title>
-        <a href="https://marketplace.axieinfinity.com/axie/{{ axie.id }}" target="_blank" class="axieImg">
-            <img mat-card-image src="{{ axie.image }}" alt="AxieImage">
+        <div *ngIf="axie.stats" class="stats">
+            <div class="hp">
+                <mat-icon class="icon">favorite</mat-icon>
+                <div>
+                    {{ axie.stats.hp }}
+                </div>
+            </div>
+            <div class="speed">
+                <mat-icon class="icon">bolt</mat-icon>
+                {{ axie.stats.speed }}
+            </div>
+            <div class="skill">
+                <mat-icon class="icon">star</mat-icon>
+                {{ axie.stats.skill }}
+            </div>
+            <div class="morale">
+                <mat-icon class="icon">local_fire_department</mat-icon>
+                {{ axie.stats.morale }}
+            </div>
+        </div>
+        <a href="https://marketplace.axieinfinity.com/axie/{{ axie.id }}" target="_blank" class="axieImgContainer">
+            <img class="axieImg" src="{{ axie.image }}" alt="AxieImage">
         </a>
     </div>
     <div class="content">
         <div class="cards">
-            <img src="{{ card.imgUrl }}" alt="" *ngFor="let card of axie.parts" class="cardImg">
+            <img src="{{ card.imgUrl }}" *ngFor="let card of axie.parts" class="cardImg">
         </div>
     </div>
-
 </mat-card>

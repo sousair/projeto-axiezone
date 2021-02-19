@@ -14,31 +14,111 @@
     display: flex;
 }
 
-.axieImg {
-    width: 100%;
-}
-
 .nameAndImg {
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
 
+.nameAndClass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.axieImgContainer {
+    width: 90%;
+    height: 87%;
+}
+
+.axieImg {
+    width: 100%;
+    height: 100%;
+}
+
+.stats {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    font-size: 1.3rem;
+}
+
+.stats div {
+    display: flex;
+    padding: 0% 2% 0% 2%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    font-size: 1.6rem;
+    padding-right: 2%;
+}
+
+.hp .icon {
+    color: green;
+}
+
+.speed .icon {
+    color: yellow;
+}
+
+.skill .icon {
+    color: purple;
+}
+
+.morale .icon {
+    color: red;
+}
+
+.aquatic {
+    font-weight: 600;
+    color: blue;
+}
+
+.beast {
+    font-weight: 600;
+    color: chocolate;
+}
+
+.bug {
+    font-weight: 600;
+    color: red;
+}
+
+.bird {
+    font-weight: 600;
+    color: lightpink;
+}
+
+.plant {
+    font-weight: 600;
+    color: green;
+}
+
+.reptile {
+    font-weight: 600;
+    color: purple;
+}
+
 .content {
-    width: 50%;
+    width: 60%;
 }
 
 .cards {
     display: flex;
-    height: 100%;
+    height: 65%;
     width: 100%;
+    padding-top: 2%;
     box-sizing: content-box;
+    justify-content: space-evenly;
 }
 
 .cardImg {
-    box-sizing: content-box;
     width: 23%;
-    height: 50%;
-    padding-right: 1%;
+    height: 100%;
 }

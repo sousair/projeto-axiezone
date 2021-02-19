@@ -37,11 +37,10 @@ export class TeamComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    this.getTeam();
- 
     this.headerService.headerDataTitle = '';
     this.headerService.headerDataSubTitle = '';
+
+    this.getTeam();
   }
 
   getTeam(): void {

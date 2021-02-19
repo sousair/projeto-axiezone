@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list'
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 
 import { TeamComponent } from 'src/app/view/team/team.component';
 import { MarketplaceComponent } from 'src/app/view/marketplace/marketplace.component';
@@ -24,6 +25,7 @@ import { MarketplaceComponent } from 'src/app/view/marketplace/marketplace.compo
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
+    MatIconModule,
     RouterModule.forChild([
       {
         path: 'marketplace',

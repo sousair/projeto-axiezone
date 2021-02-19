@@ -5,5 +5,10 @@ export interface Axie {
     class: string,
     parts: Card[],
     image: string,
-    stats: object,
+    stats: {
+        hp: number,
+        speed: number,
+        skill: number,
+        morale: number
+    },
 }
