@@ -1,6 +1,7 @@
 const { authSecret } = require('../.env')
 const jwt = require('jwt-simple')
 const bcrypt = require('bcrypt')
+const { ExtractJwt } = require('passport-jwt')
 
 module.exports = app => {
     const signin = async (req, res) => {
@@ -39,19 +40,23 @@ module.exports = app => {
     }
 
     const validateToken = async (req, res) => {
-        const userData = req.body || null
+
+        if (!req.headers.authorization) return res.send({valid: false})
+
+        const token = req.headers.authorization.split(' ')[1]
+
         try {
-            if(userData) {
-                const token = jwt.decode(userData.token, authSecret)
-                if(new Date(token.exp * 1000) > new Date()) {
-                    return res.send(true)
+            if(token) {
+                const payload = jwt.decode(token, authSecret)
+                if(new Date(payload.exp * 1000) > new Date()) {
+                    return res.send({valid: true})
                 }
             }
         } catch (error) {
             // Algum problema com o token(expirado, etc...)
         }
 
-        res.send(false)
+        res.send({valid: false})
     }
 
     return { signin, validateToken }
