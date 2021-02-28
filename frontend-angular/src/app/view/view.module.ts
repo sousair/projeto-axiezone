@@ -1,3 +1,4 @@
+import { AuthGuard } from './auth.guard';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
@@ -47,6 +48,9 @@ import { Component2Component } from './dashboard/components/component2/component
       {
         path: 'dashboard',
         component: DashboardComponent,
+        canActivate: [
+          AuthGuard
+        ],
         children: [
           {
             path: 'component1',
