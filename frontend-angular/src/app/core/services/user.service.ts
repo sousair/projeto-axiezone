@@ -32,6 +32,10 @@ export class UserService {
     this.router.navigate(['']);
   }
 
+  getToken(): string {
+    return localStorage.getItem('token') || '';
+  }
+
   verifyToken(): Observable<any> {
     return this.httpClient.get<boolean>(`${this.serverUrl}/validateToken`);
   }
