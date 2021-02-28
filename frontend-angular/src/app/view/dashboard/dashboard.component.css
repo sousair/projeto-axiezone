@@ -1,0 +1,9 @@
+.container {
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.nav {
+    width: 15%;
+}
