@@ -1,3 +1,4 @@
+import { UserService } from 'src/app/core/services/user.service';
 import { HeaderData } from './../../core/content-header/header-data.model';
 import { HeaderService } from 'src/app/core/content-header/header.service';
 import { Component, OnInit } from '@angular/core';
@@ -16,12 +17,19 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private headerService: HeaderService,
+    private userService: UserService
   ) {
     this.headerService.headerDataTitle = this.headerData.title;
     this.headerService.headerDataSubTitle = this.headerData.subtitle;
    }
 
   ngOnInit(): void {
+    this.userService.verifyToken().subscribe({
+      next: res => {
+        if(!res.valid) this.userService.logout();
+      },
+      error: error => console.error(error)
+    })
   }
 
 }

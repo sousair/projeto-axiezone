@@ -35,7 +35,7 @@ export class MarketplaceComponent implements OnInit {
   getAllTeams(): void {
     this.teamsService.getAllTeamsWithoutPlayer().subscribe({
       next: teams => this.teams = teams,
-      error: error => console.log('Erro', error)
+      error: error => console.log(error)
     })
   }
 

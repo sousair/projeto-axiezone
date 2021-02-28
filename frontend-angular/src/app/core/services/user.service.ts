@@ -1,4 +1,5 @@
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -8,7 +9,8 @@ import { Observable } from 'rxjs';
 export class UserService {
 
   constructor(
-    private httpClient: HttpClient
+    private httpClient: HttpClient,
+    private router: Router
   ) { }
 
   private serverUrl: string = 'http://localhost:3000';
@@ -27,6 +29,11 @@ export class UserService {
 
   logout(): void {
     localStorage.removeItem('token');
+    this.router.navigate(['']);
+  }
+
+  verifyToken(): Observable<any> {
+    return this.httpClient.get<boolean>(`${this.serverUrl}/validateToken`);
   }
 
 }
