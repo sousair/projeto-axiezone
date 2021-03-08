@@ -1,6 +1,29 @@
 module.exports = app => {
 
-    const { exists, notExists } = app.api.validation
+    const { notExists } = app.api.validation
+
+    getCard = part => {
+        return app.db('cards')
+            .select('name', 'type', 'cost', 'cardName', 'damage', 'shield', 'description', 'imgUrl')
+            .where({ name: part.name, type: part.type })
+            .first()
+    }
+
+    getTeamCards = async team => {
+        const newAxiesPromises = await team.axies.map(async axie => {
+            const newPartsPromises = axie.parts.map(async part => {
+                return await getCard(part)
+            })
+
+            await Promise.all(newPartsPromises).then(values => axie.parts = values)
+
+            return axie
+        })
+
+        await Promise.all(newAxiesPromises).then(axiesArray => team.axies = axiesArray)
+        
+        return team
+    }
 
     saveCards = async (req, res) => {
         app.db.insert(req.body.cards)
@@ -9,15 +32,6 @@ module.exports = app => {
             .catch(error => res.status(500).send(error))
     }
 
-    getCard = async (req, res) => {
-        const card = { ...req.params }
-        app.db('cards')
-            .select('name', 'type', 'cost', 'cardName', 'damage', 'shield', 'description', 'imgUrl')
-            .where({ name: card.name, type: card.type })
-            .first()
-            .then(card => res.status(200).json(card))
-            .catch(error => res.status(500).send(error))
-    }
 
     saveCard = async (req, res) => {
         const card = { ...req.params }
@@ -39,5 +53,5 @@ module.exports = app => {
 
     }
 
-    return { saveCards, saveCard, getCard }
+    return { saveCards, saveCard, getTeamCards }
 }

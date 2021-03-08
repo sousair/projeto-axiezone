@@ -4,31 +4,29 @@ module.exports = app => {
 
         const team = { ...req.body }
 
-        if(req.params.id) team.id = req.params.id
+        if (req.params.id) team.id = req.params.id
 
         try {
             exists(team.name, 'Nome do time não informado.')
             exists(team.type, 'Tipo/Categoria não informado.')
             exists(team.rent, 'Cobrança semanal não informada.')
-            // exists(team.ownerMail, 'Email do dono não informado.') // método não necessáiro pois o id do dono é acessado pelo req.user
             exists(team.description, 'Adicione uma descrição para o seu time')
             exists(team.cashPolitic, 'Informe como será feita a cobrança e quando será o seu dia')
             exists(team.devolutionPolitic, 'Informe como será feita a devolução do time')
-            exists(team.accountId, 'Infome a carteira da conta com os axies')
+            exists(team.accountId, 'Informe a carteira da conta com os axies')
 
             const teamFromDataBase = await app.db('teams')
                 .where({ accountId: team.accountId })
                 .first()
-            
-            if(!team.id) notExists(teamFromDataBase, 'Essa carteira já cadastrada no sistema')
+
+            if (!team.id) notExists(teamFromDataBase, 'Essa carteira já cadastrada no sistema')
 
             team.ownerId = req.user.id
-
         } catch (msg) {
             res.status(400).send(msg)
         }
 
-        if(team.id) {
+        if (team.id) {
             app.db('teams')
                 .update(team)
                 .where({ id: team.id })
@@ -40,7 +38,6 @@ module.exports = app => {
                 .then(_ => res.status(204).send())
                 .catch(error => res.status(500).send(error))
         }
-
     }
 
     const getAllTeams = (req, res) => {
@@ -58,31 +55,23 @@ module.exports = app => {
             .catch(error => res.status(500).send(error))
     }
 
-    const getTeamById = (req, res) => {
-        
-        // enviando o param byOwnerId setando por true
-        // será enviado um array de times com o ownderId
-        // igual ao da req.user.id
-
-        if(req.body.byOwnerId) {
-            app.db('teams')
-                .where({ ownerId: req.user.id })
-                .orderBy('id')
-                .then(teams => res.json(teams))
-        } else {
-            app.db('teams')
-                .where({ id: req.params.id })
-                .first()
-                .then(team => {
-                    team = {
-                        ...team,
-                        axies: []
-                    }
-                    return app.api.usingAxieInfinityAPI.getAxiesTeam(team, team.accountId)
-                })
-                .then(team => res.json(team))
-        }
+    const getTeamsByOwnerId = (req, res) => {
+        app.db('teams')
+            .where({ ownerId: req.user.id })
+            .orderBy('id')
+            .then(teams => res.status(200).json(teams))
+            .catch(error => res.status(500).send(error))
     }
 
-    return { saveTeam, getAllTeams, getTeamById, getTeamsWithoutPlayer }
+    const getTeamById = (req, res) => {
+        app.db('teams')
+            .where({ id: req.params.id })
+            .first()
+            .then(team => app.api.usingAxieInfinityAPI.getAxiesTeam(team, team.accountId))
+            .then(async team => await app.api.cards.getTeamCards(team))
+            .then(team => res.status(200).json(team))
+            .catch(error => res.status(500).send(error))
+    }
+
+    return { saveTeam, getAllTeams, getTeamById, getTeamsByOwnerId, getTeamsWithoutPlayer }
 }

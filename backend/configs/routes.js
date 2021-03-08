@@ -18,7 +18,7 @@ module.exports = app => {
 
     // Modo para um Administrador pegar todos os times,
     // independente de que já tenha player ou não
-    app.route('/allteams')
+    app.route('/allTeams')
         .all(app.configs.passport.authenticate())
         .get(admin(app.api.teams.getAllTeams))
 
@@ -26,6 +26,10 @@ module.exports = app => {
         .get(app.api.teams.getTeamsWithoutPlayer)
         .all(app.configs.passport.authenticate())
         .post(app.api.teams.saveTeam)
+
+    app.route('/teams/byOwner/:id')
+        .all(app.configs.passport.authenticate())
+        .get(app.api.teams.getTeamsByOwnerId)
     
     app.route('/teams/:id')
         .get(app.api.teams.getTeamById)
@@ -51,10 +55,10 @@ module.exports = app => {
         .delete(app.api.rents.cancelRent)
 
     app.route('/cards')
+        .all(app.configs.passport.authenticate())
         .post(app.api.cards.saveCards)
     
     app.route('/cards/:name/:type')
-        .get(app.api.cards.getCard)
         .all(app.configs.passport.authenticate())
         .post(app.api.cards.saveCard)
 
