@@ -1,13 +1,13 @@
-import { ValidateInputsService } from 'src/app/core/services/validate-inputs.service';
-import { FormGroup, AbstractControl } from '@angular/forms';
 import { Component, Input } from '@angular/core';
+import { AbstractControl, FormGroup } from '@angular/forms';
+import { ValidateInputsService } from 'src/app/core/services/validate-inputs.service';
 
 @Component({
-  selector: 'app-input-text',
-  templateUrl: './input-text.component.html',
-  styleUrls: ['./input-text.component.css']
+  selector: 'app-input-textarea',
+  templateUrl: './input-textarea.component.html',
+  styleUrls: ['./input-textarea.component.css']
 })
-export class InputTextComponent {
+export class InputTextareaComponent {
 
   @Input() formGroup !: FormGroup;
   @Input() controlName : string = '';
@@ -22,7 +22,6 @@ export class InputTextComponent {
 
   get formControl(): AbstractControl {
     return this.formGroup.controls[this.controlName];
-
   }
 
 }

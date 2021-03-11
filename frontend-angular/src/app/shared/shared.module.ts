@@ -9,13 +9,17 @@ import { InputTextComponent } from 'src/app/shared/components/inputs/input-text/
 import { InputEmailComponent } from 'src/app/shared/components/inputs/input-email/input-email.component';
 import { InputPasswordComponent } from 'src/app/shared/components/inputs/input-password/input-password.component';
 import { InputTelComponent } from 'src/app/shared/components/inputs/input-tel/input-tel.component';
+import { InputNumberComponent } from './components/inputs/input-number/input-number.component';
+import { InputTextareaComponent } from './components/inputs/input-textarea/input-textarea.component';
 
 @NgModule({
   declarations: [
     InputTextComponent,
     InputEmailComponent,
     InputPasswordComponent,
-    InputTelComponent
+    InputTelComponent,
+    InputNumberComponent,
+    InputTextareaComponent
   ],
   imports: [
     CommonModule,
@@ -28,6 +32,8 @@ import { InputTelComponent } from 'src/app/shared/components/inputs/input-tel/in
     InputEmailComponent,
     InputPasswordComponent,
     InputTelComponent,
+    InputNumberComponent,
+    InputTextareaComponent
   ]
 })
 export class SharedModule { }

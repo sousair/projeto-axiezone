@@ -1,0 +1,15 @@
+.container {
+  box-sizing: content-box;
+}
+
+.form {
+  padding-top: 20px;
+}
+
+.double-input {
+  display: flex;
+}
+
+.button {
+  width: 100%;
+}

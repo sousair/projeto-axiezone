@@ -1,15 +1,11 @@
+.container {
+  width: 100%
+}
+
 .full-width {
   width: 100%;
 }
 
 .half-width {
   width: 50%;
-}
-
-.double {
-  width: 49%;
-}
-
-.second {
-  padding-left: 2%;
 }

@@ -2,8 +2,15 @@
     margin-right: 10%;
     margin-left: 10%;
     display: flex;
+    padding-bottom: 25px;
 }
 
 .nav {
     width: 15%;
+    align-self: flex-start;
+}
+
+.content {
+  width: 85%;
+  margin-left: 1%;
 }

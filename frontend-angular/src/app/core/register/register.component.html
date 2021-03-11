@@ -4,16 +4,16 @@
     </mat-card-title>
 
     <form [formGroup]="user" (ngSubmit)="register()" class="example-form">
-        
-        <app-input-text [formGroup]="user" controlName="name" placeholder="Pedro Miguel da Silva" inputName="name" label="Nome *" class="full-width" ></app-input-text>
+
+        <app-input-text classes="full-width" [formGroup]="user" controlName="name" placeholder="Pedro Miguel da Silva" inputName="name" label="Nome *" class="full-width" ></app-input-text>
         <app-input-email [formGroup]="user" controlName="email" placeholder="a@b.com" inputName="email" label="Email *"></app-input-email>
         <app-input-password [formGroup]="user" controlName="password" inputName="password" label="Senha *"></app-input-password>
         <app-input-password [formGroup]="user" controlName="confirmPassword" inputName="confirmPassword" label="Confirme a senha *"></app-input-password>
-        <app-input-text [formGroup]="user" controlName="nickname" placeholder="pedrinho123" inputName="nickname" label="Nickname *"></app-input-text>
-        <app-input-text [formGroup]="user" controlName="walletAdress" inputName="walletAdress" label="Carteira ETH *"></app-input-text>
+        <app-input-text classes="full-width" [formGroup]="user" controlName="nickname" placeholder="pedrinho123" inputName="nickname" label="Nickname *"></app-input-text>
+        <app-input-text classes="full-width" [formGroup]="user" controlName="walletAdress" inputName="walletAdress" label="Carteira ETH *"></app-input-text>
         <!-- <mat-form-field appearance="fill" color="accent">
             <mat-label>Carteira ETH</mat-label>
-            <input formControlName="walletAdress" required matInput 
+            <input formControlName="walletAdress" required matInput
                 type="text" name="walletAdress">
             <mat-error *ngIf="validateInputs.hasErrorValidate(control.walletAdress, 'required')">Campo obrigatório</mat-error>
             <mat-error *ngIf="validateInputs.hasErrorValidate(control.walletAdress, 'minlength')">Precisa ter exatamente 42 caracteres</mat-error>
@@ -21,6 +21,6 @@
         </mat-form-field> -->
         <app-input-tel [formGroup]="user" controlName="cell" placeholder="DD98888-8888" inputName="cell" label="Telefone *"></app-input-tel>
 
-        <button type="submit" [disabled]="user.invalid" mat-raised-button color="accent" class="button">Registrar</button>  
+        <button type="submit" [disabled]="user.invalid" mat-raised-button color="accent" class="button">Registrar</button>
     </form>
 </mat-card>

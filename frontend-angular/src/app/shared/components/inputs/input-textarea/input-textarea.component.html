@@ -1,0 +1,13 @@
+<div [formGroup]="formGroup" class="container">
+  <mat-form-field appearance="fill" color="accent" [class]="classes">
+    <mat-label> {{ label }} </mat-label>
+    <textarea
+      matInput
+      cdkTextareaAutosize
+      [formControlName]="controlName"
+      [placeholder]="placeholder"
+      [name]="inputName">
+    </textarea>
+    <mat-error *ngIf="validateInputs.hasErrorValidate(formControl, 'required')">Campo obrigatório</mat-error>
+  </mat-form-field>
+</div>

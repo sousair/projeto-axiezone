@@ -1,0 +1,17 @@
+<mat-card class="container">
+  <mat-card-title>
+    Registrar Time
+  </mat-card-title>
+  <form [formGroup]="team" (ngSubmit)="register()" class="form">
+
+    <app-input-text classes="full-width" [formGroup]="team" controlName="name" placeholder="Time carrot" inputName="name" label="Nome do time *"></app-input-text>
+    <app-input-text classes="double" [formGroup]="team" controlName="type" placeholder="DPS" inputName="type" label="Tipo do time *"></app-input-text>
+    <app-input-number classes="double second" [formGroup]="team" controlName="rent" placeholder="abc" inputName="rent" label="Aluguel *" [step]=25></app-input-number>
+    <app-input-text classes="full-width" [formGroup]="team" controlName="accountId" placeholder="Carteira ETH da conta" inputName="accountId" label="Carteira da conta *"></app-input-text>
+    <app-input-textarea classes="full-width" [formGroup]="team" controlName="description" placeholder="Descrição da funcionalidade do time" inputName="description" label="Descrição *"></app-input-textarea>
+    <app-input-textarea classes="full-width" [formGroup]="team" controlName="cashPolitic" placeholder="Explicar como será a política de pagamento" inputName="cashPolitic" label="Politica de pagamento *"></app-input-textarea>
+    <app-input-textarea classes="full-width" [formGroup]="team" controlName="devolutionPolitic" placeholder="Explicar como será a política de devolução" inputName="devolutionPolitic" label="Politica de devolução *"></app-input-textarea>
+
+    <button type="submit" [disabled]="team.invalid" mat-raised-button color="accent" class="button">Registrar</button>
+  </form>
+</mat-card>

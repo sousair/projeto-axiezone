@@ -1,4 +1,3 @@
-import { Component1Component } from './../components/component1/component1.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
